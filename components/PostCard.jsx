@@ -23,11 +23,11 @@ const PostCard = ({ post }) => (
       />
     </div>
 
-    <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
+    <h1 className="transition duration-300 text-center mb-8 cursor-pointer hover:text-indigo-900 text-3xl font-semibold">
       <Link href={`/post/${post.slug}`}>{post.title}</Link>
     </h1>
     <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
-      <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 items-center">
+      <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
         <Image
           unoptimized
           alt={post.author.name}
@@ -43,7 +43,7 @@ const PostCard = ({ post }) => (
       <div className="font-medium text-gray-700">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 inline mr-2 text-pink-500"
+          className="h-6 w-6 inline mr-2 text-gray-700"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -65,7 +65,7 @@ const PostCard = ({ post }) => (
     </p>
     <div className="text-center">
       <Link href={`/post/${post.slug}`}>
-        <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
+        <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-black text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
           Continue Reading
         </span>
       </Link>
